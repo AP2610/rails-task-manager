@@ -1,0 +1,14 @@
+<div class="container">
+<h1>My Tasks</h1>
+<ul id="list-inline">
+  <% @tasks.each do |task| %>
+    <% if task.completed %>
+      <li class="list-inline-item"><input name="done" type="checkbox" checked> | <%= link_to task.title, task_path(task) %> | <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are You Sure?"} %></li>
+    <% else %>
+      <li class="list-inline-item"><input name="done" type="checkbox"> | <%= link_to task.title, task_path(task) %> | <%= link_to "Delete", task_path(task), method: :delete, data: { confirm: "Are You Sure?"} %></li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "Add a new task", new_path %>
+</div>

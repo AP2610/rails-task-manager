@@ -1,0 +1,19 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa|Montserrat&display=swap');
+@import url('pages/index.css');
+
+h1 {
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  // background: linear-gradient(-250deg, rgba(155, 155, 155, 0.8) 30%, rgba(155, 155, 155, 0.5) 80%), url('https://picsum.photos/1080/720');
+  // background-size: cover;
+  background: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url("http://unsplash.it/1920/1080/?random");
+  background-size: cover;
+}
+
+

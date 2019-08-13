@@ -1,0 +1,8 @@
+#list-inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline-item a {
+  text-decoration: none;
+}
